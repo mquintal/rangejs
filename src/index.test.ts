@@ -1,9 +1,8 @@
 import { range } from './index';
 
 
-const toList = (gen: Iterator<number>): number[] => {
+const toList = (gen: Generator<number>): number[] => {
     const list = [];
-    // @ts-ignore
     for(const num of gen) {
         list.push(num);
     }

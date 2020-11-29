@@ -11,7 +11,7 @@
   *     range(-1, -4) -> -1, -2, -3
   *     range(-4) -> 0, -1, -2, -3
   */
-export function* range(start: number, stop: number = null, step: number = null): Iterator<number> {
+export function* range(start: number, stop: number = null, step: number = null): Generator<number> {
     if(stop === null) {
         stop = start
         start = 0
@@ -31,9 +31,8 @@ export function* range(start: number, stop: number = null, step: number = null):
     let len = Math.max(Math.ceil(Math.abs(stop - start) / (Math.abs(step) || 1)), 0);
 
     while (len--) {
-        const temp = start;
+        yield start;
         start += step
-        yield temp;
     }
 }
 
