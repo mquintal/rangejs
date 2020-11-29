@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "declarationDir": "./dist",
+        "module": "CommonJS",
+        "noImplicitAny": true,
+        "lib": ["ES2015.Generator"],
+        "outDir": "./dist",
+        "target": "ES2015",
+        "moduleResolution": "Node"
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist", "src/**/*.test.ts"]
+}

@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - "14.15.1"
+
+scripts:
+  - npm run test:coverall
+
+before_deploy:
+  - npm run build
+
+deploy:
+  provider: npm
+  email: $NPM_EMAIL
+  api_key: $NPM_KEY
+  skip_cleanup: true
+  on:
+    tags: true
