@@ -1,0 +1,11 @@
+node_modules
+src
+coverage
+.git
+.tests
+.gitignore
+.editorconfig
+.npmignore
+.travis.yml
+tsconfig.json
+babel.config.js

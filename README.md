@@ -16,7 +16,7 @@ or
 
 ```js
 import { range } from 'grangejs';
-// const { range } = require('rangejs'); 
+// const { range } = require('grangejs'); 
 
 // Using a for loop
 for(const num of range(10)) {
@@ -35,7 +35,7 @@ while(!result.done) {
 }
 // outputs: 0, 1, 2
 
-// Gettinh values manually
+// Getting values manually
 const gen = range(2);
 
 console.log(gen.next().value); // outputs: 0
